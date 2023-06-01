@@ -113,44 +113,7 @@ function Home() {
           </ol>
         </div>
 
-        <div className="card">
-          <h3>Error handling</h3>
-          <ul>
-            <li>
-              <a href="/static/non-existing-url">Non existing page</a>
-            </li>
-            <li>
-              <a href="/account">Authentication error</a>. Instead of showing
-              this error you can automatically redirect to login page by
-              changing to{' '}
-              <span className="code">
-                "401": &#123; "redirect": "/login", "statusCode": 302 &#125;
-              </span>{' '}
-              in{' '}
-              <a href="https://github.com/webmaxru/pwa-on-swa/blob/main/staticwebapp.config.json">
-                SWA Config
-              </a>
-            </li>
-          </ul>
-          <hr />
-          <p>To have custom error pages:</p>
-          <ol>
-            <li>
-              Set up <span className="code">responseOverrides</span> in{' '}
-              <a href="https://github.com/webmaxru/pwa-on-swa/blob/main/staticwebapp.config.json">
-                SWA Config
-              </a>
-            </li>
-            <li>
-              Add these pages to <span className="code">denylist</span> of{' '}
-              <span className="code">NavigationRoute</span> in{' '}
-              <a href="https://github.com/webmaxru/pwa-on-swa/blob/main/src/sw/service-worker.js">
-                Service Worker
-              </a>
-            </li>
-          </ol>
-        </div>
-
+       
         <div className="card">
           <h3>Authentication</h3>
           <ul>
